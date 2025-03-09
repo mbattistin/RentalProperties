@@ -43,10 +43,10 @@ public class MainControllerManager {
         System.out.println("==========================================================================================");
         System.out.println("|                                     System Menu                                        |");
         System.out.println("==========================================================================================");
-        System.out.println("| 1 – List all properties rented out by all clients whose name contains a keyword/letter |");
+        System.out.println("| 1 – List all properties rented out by all clients whose name contains a name/keyword   |");
         System.out.println("| 2 – List all the properties for a specific owner                                       |");
         System.out.println("| 3 – List all the properties which have a certain rent amount                           |");
-        System.out.println("| 4 – List all properties which the address contains a keyword/letter                    |");
+        System.out.println("| 4 – List all properties which the address contains a address/keyword                   |");
         System.out.println("| 5 – List all clients who have properties rented out for a specific duration            |");
         System.out.println("| 6 – List all clients who pay a certain rent amount                                     |");
         System.out.println("| 7 – List all owners who have a certain amount of properties                            |");
@@ -58,7 +58,7 @@ public class MainControllerManager {
         menuOptionActions(selectedMenuOption);
     }
      
-      void menuOptionActions(int selectedMenuOption){
+     public void menuOptionActions(int selectedMenuOption){
          //switch case used because there is an only variable to validate and it's value is limited
          switch (selectedMenuOption){
              case 1 -> {

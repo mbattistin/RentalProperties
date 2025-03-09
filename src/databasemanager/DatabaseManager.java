@@ -17,6 +17,7 @@ private String databaseUserPassword;
 private Connection databaseConnection;
 private boolean isConnectionWorking = true;
 private String connectionErrorMessage;
+//variable to format the space in the table columns
 private String tableSpacing = "%-50s";
 
     //Gets the private property value

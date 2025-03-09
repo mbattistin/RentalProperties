@@ -107,7 +107,8 @@ public class InputUtilities {
            }
             catch(Exception ex){
                 System.out.println("That's what not an integer");
-                myKB.nextLine();
+                //Used to avoid the infinity loop
+                myKB.next();
             }
             
         }while (userInput < minValue);
@@ -139,7 +140,7 @@ public class InputUtilities {
                 }
                 catch(Exception ex){
                     System.out.println("That's what not an integer");
-                    myKB.nextLine();
+                    myKB.next();
                 }
             
         }while (userInput < minValue || userInput > maxValue);
@@ -167,7 +168,7 @@ public class InputUtilities {
                 }
                 catch(Exception ex){
                     System.out.println("That's what not an decimal.");
-                    myKB.nextLine();
+                    myKB.next();
                 }
             
         }while (userInput <= minValue);
@@ -200,7 +201,7 @@ public class InputUtilities {
                     isDatevalid = true;
                 } catch (ParseException e) {
                     isDatevalid =  false; 
-                    myKB.nextLine();
+                    myKB.next();
                 }    
             }while (!isDatevalid);
             //userinput must be valid date
@@ -231,7 +232,7 @@ public class InputUtilities {
                             
                 } catch (ParseException e) {
                     isDatevalid =  false; 
-                    myKB.nextLine();
+                    myKB.next();
                 }
             //Keeps going until the data is invalid or the data is less than the min date                 
             }while (!isDatevalid || inputDate.before(minDate));
